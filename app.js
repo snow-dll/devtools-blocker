@@ -1,4 +1,3 @@
-
 function clearDOM() {
 	document.body.innerHTML = "";
 	const errElem = document.createElement('p');
@@ -6,7 +5,6 @@ function clearDOM() {
 	errElem.appendChild(errText);
 	document.body.appendChild(errText);
 }
-
 
 console.log(Object.defineProperties(new Error, {
 	message: {get() {clearDOM()}}
